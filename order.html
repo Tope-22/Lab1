@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Order Now</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+              <!-- navbar -->
+              <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#menu"
+                        role="button" data-bs-toggle="dropdown">
+                        Menu
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.html">Burger</a></li>
+                        <li><a class="dropdown-item" href="index.html">Drinks</a></li>
+                        <li><a class="dropdown-item" href="index.html">Desserts</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order.html">Order Now</a>
+                </li>
+            </ul>
+    
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="whopper.webp" class="d-block w-100" alt="whopper">
+                    </div>
+                </div>
+            </div>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="fries.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item"   data-bs-interval="2000">
+                <img src="borgir.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="king2.webp" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="d-grid gap-2 d-md-block">
+            <button class="btn btn-primary" type="button">Order Now</button>
+            <button class="btn btn-primary" type="button">Order History</button>
+          </div>
+
+          <div class="d-flex justify-content-center gap-3 my-4">
+            <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <div class="spinner-border text-danger" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+
+          <h2 id="featured">Featured Items</h2>
+
+          <div class="card">
+            <img src="Angriest_Whopper.webp" class="card-img-top" alt="angry">
+            <div class="card-body">
+                <h5 class="card-title">Angriest Whopper</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Angriest_4-Cheese_Whopper.webp" class="card-img-top" alt="angry cheese">
+            <div class="card-body">
+                <h5 class="card-title">Angriest 4-Cheese Whopper</h5>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Angriest_X-tra_Long_Chicken.webp" class="card-img-top" alt="angry long">
+            <div class="card-body">
+                <h5 class="card-title">Angriest X-tra Long Chicken</h5>
+            </div>
+        </div>
+
+        <h2 id="contact">Contact Us</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+            <input  type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            <label for="exampleFormControlTextarea1" class="form-label">Response</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button type="button" class="btn btn-primary btn-sm">Submit</button>
+          </div>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>

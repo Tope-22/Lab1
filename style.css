@@ -1,0 +1,246 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: #f7efe8;
+    color: #4b1d0d;
+    font-family: Georgia, serif;
+}
+
+/* navbar */
+
+.nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    min-height: 70px;
+    padding: 0 5%;
+    background: #fffaf6;
+    border-bottom: 1px solid #ddd;
+    align-items: center;
+}
+
+.nav-link {
+    color: #4b1d0d !important;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #e52b0b !important;
+}
+
+.nav-item:last-child .nav-link {
+    background: #e52b0b;
+    color: white !important;
+    border-radius: 20px;
+    padding: 10px 25px;
+}
+
+.dropdown-menu {
+    border: 0;
+}
+
+.dropdown-item:hover {
+    background: #f7efe8;
+    color: #e52b0b;
+}
+
+/* carousel */
+
+#carouselExample,
+#carouselExampleInterval {
+    width: 90%;
+    max-width: 990px;
+    margin: auto;
+}
+
+.carousel-inner {
+    overflow: hidden;
+    border-radius: 0 0 8px 8px;
+}
+
+.carousel-item img {
+    height: 280px;
+    object-fit: cover;
+}
+
+#carouselExampleInterval .carousel-item img {
+    height: 330px;
+}
+
+/* order */
+
+#carouselExampleInterval + .d-grid {
+    width: 75%;
+    margin: 55px auto;
+    display: flex !important;
+    gap: 15px;
+}
+
+#carouselExampleInterval + .d-grid .btn {
+    flex: 1;
+    padding: 16px;
+    background: #ff852f;
+    border: 0;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+}
+
+#carouselExampleInterval + .d-grid .btn:last-child {
+    background: #542617;
+}
+
+/* text */
+
+h3 {
+    text-align: center;
+    margin: 35px 0 5px;
+    font-size: 30px;
+}
+
+p {
+    text-align: center;
+}
+
+h2 {
+    width: 90%;
+    margin: 30px auto 15px;
+}
+
+/* cards */
+
+.card {
+    display: inline-flex;
+    vertical-align: top;
+    width: 22% !important;
+    height: 340px;
+    margin: 10px 1.3%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img-top {
+    height: 210px;
+    object-fit: contain;
+    padding: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.card .btn,
+button.btn {
+    background: #e52b0b;
+    color: white !important;
+    border: 0;
+    border-radius: 14px;
+}
+
+.card .btn:hover,
+button.btn:hover {
+    background: #c9230b;
+}
+
+/* menu */
+
+.card-group {
+    width: 90%;
+    margin: auto;
+}
+
+.card-group .card {
+    width: 33.33% !important;
+    margin: 0;
+}
+
+/* contact */
+
+.mb-3 {
+    width: 90%;
+    max-width: 900px;
+    margin: 15px auto !important;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control:focus {
+    border-color: #e52b0b;
+    box-shadow: 0 0 5px #e52b0b;
+}
+
+button.btn {
+    display: block;
+    margin: 20px auto 40px;
+    padding: 8px 25px;
+}
+
+/* responsive */
+
+@media (max-width: 800px) {
+    .nav {
+        padding: 0 5%;
+    }
+
+    .card {
+        width: 45% !important;
+    }
+
+    #carouselExampleInterval + .d-grid {
+        width: 90%;
+    }
+
+    #carouselExampleInterval .carousel-item img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav {
+        justify-content: center !important;
+        padding: 8px 3%;
+    }
+
+    .nav-link {
+        padding: 7px !important;
+        font-size: 12px;
+    }
+
+    .card,
+    .card-group .card {
+        width: 90% !important;
+        margin: 10px auto;
+    }
+
+    .carousel-item img {
+        height: 200px;
+    }
+
+    #carouselExampleInterval .carousel-item img {
+        height: 180px;
+    }
+
+    #carouselExampleInterval + .d-grid {
+        width: 90%;
+        margin: 30px auto;
+        flex-direction: column;
+    }
+
+    #carouselExampleInterval + .d-grid .btn {
+        width: 100%;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}

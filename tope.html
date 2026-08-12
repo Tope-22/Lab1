@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Burger King</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- navbar -->
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="#carouselExample">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#menu"
+                    role="button" data-bs-toggle="dropdown">
+                    Menu
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#burger">Burger</a></li>
+                    <li><a class="dropdown-item" href="#drinks">Drinks</a></li>
+                    <li><a class="dropdown-item" href="#desserts">Desserts</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="order.html">Order Now</a>
+            </li>
+        </ul>
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="whopper.webp" class="d-block w-100" alt="whopper">
+                </div>
+            </div>
+        </div>
+
+        <h3>Welcome to Burger King. Home of the Whopper®!</h3>
+        <p>Hungry yet? Give in.</p>
+
+        <!-- featured -->
+        <h2 id="featured">Featured</h2> 
+
+        <div class="card">
+            <img src="Angriest_Whopper.webp" class="card-img-top" alt="angry">
+            <div class="card-body">
+                <h5 class="card-title">Angriest Whopper</h5>
+                <a href="order.html" class="btn btn-primary">Order Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Angriest_4-Cheese_Whopper.webp" class="card-img-top" alt="angry cheese">
+            <div class="card-body">
+                <h5 class="card-title">Angriest 4-Cheese Whopper</h5>
+                <a href="order.html" class="btn btn-primary">Order Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Angriest_X-tra_Long_Chicken.webp" class="card-img-top" alt="angry long">
+            <div class="card-body">
+                <h5 class="card-title">Angriest X-tra Long Chicken</h5>
+                <a href="order.html" class="btn btn-primary">Order Now</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Large,_Iced_Matcha_Espresso.webp" class="card-img-top" alt="matcha">
+
+            <div class="card-body">
+                <h5 class="card-title">Iced Matcha Espresso</h5>
+                <a href="order.html" class="btn btn-primary">Order Now</a>
+            </div>
+        </div>
+
+        <!-- menu -->
+        <h2 id="menu">Menu</h2>
+
+        <div class="card-group">
+
+            <div class="card" id="burger">
+                <img src="Angriest_4-Cheese_Whopper.webp"
+                    class="card-img-top" alt="burger">
+
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Burger</a>
+                </div>
+            </div>
+
+            <div class="card" id="drinks">
+                <img src="drinks.webp"
+                    class="card-img-top" alt="drinks">
+
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Drinks</a>
+                </div>
+            </div>
+
+            <div class="card" id="desserts">
+                <img src="desserts.webp"
+                    class="card-img-top" alt="desserts">
+                <div class="card-body">
+                    <a href="#" class="btn btn-primary">Desserts</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- contact -->
+        <h2 id="contact">Contact Us</h2>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email Address</label>
+            <input  type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+            <label for="exampleFormControlTextarea1" class="form-label">Response</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <button type="button" class="btn btn-primary btn-sm">Submit</button>
+          </div>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+</html>
